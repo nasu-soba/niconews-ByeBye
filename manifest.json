@@ -3,6 +3,7 @@
     "name": "niconews-ByeBye",
     "description": "ニコニコ動画のニュース欄をきれいさっぱり消してくれます👋",
     "version": "1.0",
+    "permissions":["https://www.nicovideo.jp/*"],
     "content_scripts": [
         {
             "matches": [
