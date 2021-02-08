@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name": "niconews-ByeBye",
+    "description": "ニコニコ動画のニュース欄をきれいさっぱり消してくれます👋",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.nicovideo.jp/*"
+            ],
+            "js": [ "main.js" ]
+        }
+    ],
+    "icons": {
+        "16": "16.png",
+        "48": "48.png",
+        "128": "128.png"
+    }
+}
