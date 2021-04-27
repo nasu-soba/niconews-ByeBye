@@ -1,17 +1,23 @@
 {
     "manifest_version": 2,
-    "name": "niconews-ByeBye",
-    "description": "ニコニコ動画のニュース欄をきれいさっぱり消してくれます👋",
+    "name": "NonUglyImage",
+    "description": "気持ち悪い画像が出てきそうなときにオンにするとページの画像が全部非表示になります👋",
     "version": "1.0",
-    "permissions":["https://www.nicovideo.jp/*"],
     "content_scripts": [
         {
             "matches": [
-                "https://www.nicovideo.jp/*"
+                "<all_urls>"
             ],
-            "js": [ "main.js" ]
+            "js": [
+                "main.js"
+            ],
+            "css": [
+                "style.css"
+            ]
+
         }
     ],
+    "web_accessible_resources":["hide-eye.png"],
     "icons": {
         "16": "16.png",
         "48": "48.png",
